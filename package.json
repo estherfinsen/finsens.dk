@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "hamburger-react": "^2.5.1",
     "autoprefixer": "^10.4.20",
     "next": "15.1.0",
     "react": "^19.0.0",
