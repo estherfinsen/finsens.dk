@@ -14,20 +14,17 @@ const work_header = Work_Sans({
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
-  // Effekt til at deaktivere scroll, når menuen er åben
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"; // Deaktiverer scroll
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // Genaktiverer scroll
+      document.body.style.overflow = "auto";
     }
 
-    // Rydder op ved komponent unmount
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [isOpen]); // Kører kun når isOpen ændres
-
+  }, [isOpen]);
   return (
     <nav className="flex items-center gap-9 md:gap-16 lg:gap-32">
       <Link href="/" className="flex items-center">
