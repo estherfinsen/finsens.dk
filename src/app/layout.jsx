@@ -27,6 +27,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        {" "}
+        <link rel="icon" href="/FIN.png" />
+      </Head>
       <body className={`${work_header.className} bg-blue m-0`}>
         <header className="w-full">
           <Navbar />
