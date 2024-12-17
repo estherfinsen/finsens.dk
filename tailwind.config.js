@@ -43,6 +43,9 @@ module.exports = {
         ".word-spacing-custom": {
           "word-spacing": "3.0em",
         },
+        ".word-spacing-reset": {
+          "word-spacing": "0.0em",
+        },
       });
     },
   ],

@@ -1,9 +1,12 @@
-"use client"; // Markér komponenten som client-side
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Work_Sans } from "next/font/google";
+
+// Tilføj de dataarrays for billederne (bare et eksempel - de skal være tilgængelige i din kode)
+import dataGrafik from "./dataGrafik";
+import dataScenografi from "./dataScenografi";
+import dataSpeak from "./dataSpeak";
 
 const work_bread = Work_Sans({
   weight: ["500"],
@@ -37,7 +40,7 @@ export default function Page() {
         </Link>
 
         <Link href={"/speak"}>
-          <div className="relative overflow-hidden w-full mb-12 py-0 bg-red hover:bg-blue hover:text-red hover:duration-500">
+          <div className="relative overflow-hidden w-full mb-20 py-0 bg-red hover:bg-blue hover:text-red hover:duration-500">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
             <div className="relative flex animate-program-1 w-full">
               <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak</p>
@@ -50,28 +53,65 @@ export default function Page() {
       <div>
         <Image src={"/imgs/kronhjort/kronhjort_cover.jpg"} alt={"kronhjort"} width={500} height={300} className="w-full pb-20" />
       </div>
+      <p className="text-red pb-10 word-spacing-reset text-headers">Nyeste projekter</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-full">
-        {["grafik", "scenografi", "speak"].map((category) => (
-          <Link key={category} href={`/${category}`} className="relative group aspect-square overflow-hidden">
-            <div className="relative w-full h-full">
-              <Image src={"/imgs/rasmus.jpg"} alt={category} layout="fill" objectFit="cover" className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-80" />
-              <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="relative w-full h-full">
-                  <div className="flex animate-program-2 w-full h-full items-center justify-center">
-                    {Array(10)
-                      .fill(category)
-                      .map((word, i) => (
-                        <span key={i} className="text-red uppercase tracking-widest whitespace-nowrap border-y-2 border-red py-2.5 px-4 bg-blue word-spacing-custom">
-                          {word}
-                        </span>
-                      ))}
-                  </div>
+        <Link href={"/grafik"} className="relative group aspect-square overflow-hidden">
+          <div className="relative w-full h-full">
+            <Image src={dataGrafik[0]?.images[0].src || "/default-image.jpg"} alt={dataGrafik[0]?.images[0].alt || "Grafik"} layout="fill" objectFit="cover" className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-80" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="relative w-full h-full">
+                <div className="flex animate-program-2 w-full h-full items-center justify-center">
+                  {Array(10)
+                    .fill("grafik")
+                    .map((word, i) => (
+                      <span key={i} className="text-red uppercase tracking-widest whitespace-nowrap border-y-2 border-red py-2.5 px-4 bg-blue word-spacing-custom">
+                        {word}
+                      </span>
+                    ))}
                 </div>
               </div>
             </div>
-          </Link>
-        ))}
+          </div>
+        </Link>
+
+        <Link href={"/scenografi"} className="relative group aspect-square overflow-hidden">
+          <div className="relative w-full h-full">
+            <Image src={dataScenografi[0]?.images[0].src || "/default-image.jpg"} alt={dataScenografi[0]?.images[0].alt || "Scenografi"} layout="fill" objectFit="cover" className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-80" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="relative w-full h-full">
+                <div className="flex animate-program-2 w-full h-full items-center justify-center">
+                  {Array(10)
+                    .fill("scenografi")
+                    .map((word, i) => (
+                      <span key={i} className="text-red uppercase tracking-widest whitespace-nowrap border-y-2 border-red py-2.5 px-4 bg-blue word-spacing-custom">
+                        {word}
+                      </span>
+                    ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+
+        <Link href={"/speak"} className="relative group aspect-square overflow-hidden">
+          <div className="relative w-full h-full">
+            <Image src={dataSpeak[0]?.images[0].src || "/default-image.jpg"} alt={dataSpeak[0]?.images[0].alt || "Speak"} layout="fill" objectFit="cover" className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-80 bg-grey" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="relative w-full h-full">
+                <div className="flex animate-program-2 w-full h-full items-center justify-center">
+                  {Array(10)
+                    .fill("speak")
+                    .map((word, i) => (
+                      <span key={i} className="text-red uppercase tracking-widest whitespace-nowrap border-y-2 border-red py-2.5 px-4 bg-blue word-spacing-custom">
+                        {word}
+                      </span>
+                    ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
     </section>
   );
