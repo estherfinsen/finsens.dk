@@ -30,7 +30,7 @@ export default async function singleGrafik({ params }) {
   const grafik = dataGrafik.filter((item) => item.id === data.id);
 
   return (
-    <section className={`${work_header.className} text-red uppercase pt-12 text-headers relative`}>
+    <section className={`${work_header.className} text-red uppercase  text-headers relative`}>
       <div className="relative overflow-hidden w-screen">
         <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
         <div className="relative flex animate-program-2 w-screen">

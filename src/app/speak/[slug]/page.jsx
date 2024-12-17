@@ -24,8 +24,9 @@ export default async function singleSpeak({ params }) {
   const data = res[0];
   const speak = dataSpeak.filter((item) => item.id === data.id);
   console.log(speak);
+
   return (
-    <section className={`${work_header.className} text-red uppercase pt-12 text-headers relative`}>
+    <section className={`${work_header.className} text-red uppercase  text-headers relative`}>
       <div className="relative overflow-hidden w-screen">
         <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
         <div className="relative flex animate-program-2 w-screen">
@@ -35,15 +36,20 @@ export default async function singleSpeak({ params }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-screen px-0 pt-20 work_bread">
-        <div className="md:col-start-1 md:row-start-1 relative w-full pb-[100%]  overflow-hidden mt-3 bg-grey">
+        <div className="md:col-start-1 md:row-start-1 relative w-full pb-[100%] overflow-hidden mt-3 bg-grey">
           <Image src={speak[0].images[0].src} alt={speak[0].images[0].alt || "Default alt text"} layout="fill" objectFit="cover" />
         </div>
 
         <div className="md:col-start-2 md:row-start-1 px-4 md:px-8 flex flex-col">
           <h1>{data.name}</h1>
           <p className="font-medium mt-4 text-breads">{data.description}</p>
-          <Speak speak={speak[0].sounds[0]}></Speak>
         </div>
+
+        {speak[0].sounds.map((sound, index) => (
+          <div key={index} className="mt-6">
+            <Speak speak={sound} />
+          </div>
+        ))}
       </div>
     </section>
   );

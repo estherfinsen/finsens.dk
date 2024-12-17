@@ -17,8 +17,8 @@ const dataSpeak = [
     images: [{ name: "cover", src: "/imgs/speak/min-stemme/stemme_cover.jpg", alt: "Coverbillede for projekt 3" }],
     sounds: [
       { name: "eks1", src: "/imgs/speak/min-stemme/min-stemme_eks1.mp3" },
-      { name: "eks1", src: "/imgs/speak/min-stemme/min-stemme_eks2.mp3" },
-      { name: "eks1", src: "/imgs/speak/min-stemme/min-stemme_eks.mp3" },
+      { name: "eks2", src: "/imgs/speak/min-stemme/min-stemme_eks2.mp3" },
+      { name: "eks3", src: "/imgs/speak/min-stemme/min-stemme_eks3.mp3" },
     ],
   },
 ];
