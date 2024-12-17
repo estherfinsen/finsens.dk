@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="w-full h-full bg-red z-20 absolute inset-0 flex justify-center items-center">
+        <div className="w-full h-full bg-red z-20 absolute flex inset-0 justify-center items-center">
           <ul className="flex flex-col justify-center items-center self-center text-blue uppercase gap-6">
             <li onClick={() => setOpen(false)}>
               <Link href="/grafik">
