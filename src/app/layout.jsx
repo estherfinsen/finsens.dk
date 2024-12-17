@@ -27,9 +27,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="./favicon.ico" sizes="any" />
-      </head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+
       <body className={`${work_header.className} bg-blue m-0`}>
         <header className="w-full">
           <Navbar />
