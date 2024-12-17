@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Work_Sans } from "next/font/google";
-
-// Tilføj de dataarrays for billederne (bare et eksempel - de skal være tilgængelige i din kode)
 import dataGrafik from "./dataGrafik";
 import dataScenografi from "./dataScenografi";
 import dataSpeak from "./dataSpeak";
