@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Work_Sans } from "next/font/google";
 import dataSpeak from "@/app/dataSpeak";
+import Speak from "./speak";
 
 const work_header = Work_Sans({
   weight: ["900"],
@@ -22,7 +23,7 @@ export default async function singleSpeak({ params }) {
   const res = await response.json();
   const data = res[0];
   const speak = dataSpeak.filter((item) => item.id === data.id);
-
+  console.log(speak);
   return (
     <section className={`${work_header.className} text-red uppercase pt-12 text-headers relative`}>
       <div className="relative overflow-hidden w-screen">
@@ -43,11 +44,7 @@ export default async function singleSpeak({ params }) {
           <p className="font-medium mt-4 text-breads">{data.description}</p>
         </div>
 
-        {speak[0].images.slice(1).map((image, i) => (
-          <div key={i} className="relative w-full pb-[100%]  overflow-hidden">
-            <Image src={image.src} alt={image.alt || `Image ${i + 1}`} layout="fill" objectFit="cover" />
-          </div>
-        ))}
+        <Speak speak={speak[0].sounds[0]}></Speak>
       </div>
     </section>
   );

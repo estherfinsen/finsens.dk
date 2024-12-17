@@ -1,4 +1,3 @@
-import React from "react";
 import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = "https://jhgcdsutaztszxtyehtm.supabase.co"; // Erstat med din Supabase URL
