@@ -11,10 +11,10 @@ const work_header = Work_Sans({
 
 const Footer = () => {
   return (
-    <div className="items-center mt-16 pb-10 bg-blue text-mocca uppercase">
+    <div className="items-center mt-16 pb-10 bg-blue text-mocha uppercase">
       <div className="w-full h-3 bg-red mb-12"></div>
       <div className="w-full h-3 bg-red mb-12"></div>
-      <div className="w-full h-3 bg-mocca mb-14"></div>
+      <div className="w-full h-3 bg-mocha mb-14"></div>
       <Link href="/" className="self-start pr-{-2}">
         <p className={`${work_header.className} text-nav_mobile md:text-footer_head_ipad lg:text-footer_head`}>Finsens</p>
       </Link>

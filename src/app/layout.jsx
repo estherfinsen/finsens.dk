@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Work_Sans } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -28,7 +27,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-
       <body className={`${work_header.className} bg-blue m-0`}>
         <header className="w-full">
           <Navbar />

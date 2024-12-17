@@ -32,7 +32,7 @@ module.exports = {
     colors: {
       blue: "#E1F7FF",
       red: "#FF4125",
-      mocca: "#A57865",
+      mocha: "#A57865",
       grey: "#D3D3D3",
     },
   },
