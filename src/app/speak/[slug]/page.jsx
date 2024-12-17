@@ -42,9 +42,8 @@ export default async function singleSpeak({ params }) {
         <div className="md:col-start-2 md:row-start-1 px-4 md:px-8 flex flex-col">
           <h1>{data.name}</h1>
           <p className="font-medium mt-4 text-breads">{data.description}</p>
+          <Speak speak={speak[0].sounds[0]}></Speak>
         </div>
-
-        <Speak speak={speak[0].sounds[0]}></Speak>
       </div>
     </section>
   );

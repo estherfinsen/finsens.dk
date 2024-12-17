@@ -16,9 +16,11 @@ export default function Speak({ speak }) {
   };
 
   return (
-    <div>
+    <div className="flex px-2 pt-5">
       <audio ref={audioRef} src={speak.src} />
-      <button onClick={togglePlay}>{isPlaying ? "Pause lyd" : "Afspil lyd"}</button>
+      <button onClick={togglePlay}>
+        <img src={isPlaying ? "/imgs/pause.png" : "/imgs/play.png"} alt={isPlaying ? "Pause" : "Play"} className="" />
+      </button>
     </div>
   );
 }
