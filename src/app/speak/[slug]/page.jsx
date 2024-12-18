@@ -41,8 +41,8 @@ export default async function singleSpeak({ params }) {
         </div>
 
         <div className="md:col-start-2 md:row-start-1 px-4 md:px-8 flex flex-col">
-          <h1>{data.name}</h1>
-          <p className="font-medium mt-4 text-breads">{data.description}</p>
+          <h1 className="text-footer md:text-footer lg:text-headers">{data.name}</h1>
+          <p className="font-medium mt-4 text-running md:text-running lg:text-breads">{data.description}</p>
         </div>
 
         {speak[0].sounds.map((sound, index) => (

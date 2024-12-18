@@ -34,7 +34,7 @@ export default async function speak() {
 
       <ul className="grid grid-cols-1 items-start gap-y-20 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-4 w-screen pt-20">
         {data.map((item, index) => {
-          const alignClass = index % 3 === 0 ? "md:items-start" : index % 3 === 1 ? "md:items-center" : "md:items-end";
+          const alignClass = index % 3 === 0 ? "lg:items-start" : index % 3 === 1 ? "lg:items-center" : "lg:items-end";
 
           return (
             <li key={item.id} className={`group flex ${alignClass} flex-col h-[400px] w-full`}>

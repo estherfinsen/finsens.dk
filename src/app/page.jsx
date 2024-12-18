@@ -56,7 +56,7 @@ export default function Page() {
         </p>
       </div>
 
-      <p className="text-red pb-10 word-spacing-reset text-headers">Nyeste projekter</p>
+      <p className="text-red pb-10 word-spacing-reset text-footer md:text-footer lg:text-headers">Nyeste projekter</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-full">
         <Link href={"/grafik"} className="relative group aspect-square overflow-hidden">
