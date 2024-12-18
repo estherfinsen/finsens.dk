@@ -48,9 +48,14 @@ export default function Page() {
         </Link>
       </div>
 
-      <div>
-        <Image src={"/imgs/kronhjort/kronhjort_cover.jpg"} alt={"kronhjort"} width={500} height={300} className="w-full pb-20" />
+      <div className="relative mb-20 ">
+        <Image src={"/imgs/kronhjort/kronhjort_cover.jpg"} alt={"kronhjort"} width={500} height={300} className="w-full " />
+
+        <p className="absolute inset-0 flex justify-center items-center text-running md:text-footer_breads_ipad lg:text-hjort text-red bg-blue word-spacing-reset opacity-0 hover:opacity-100 transition-opacity duration-300 z-20">
+          Finsens tilbyder skræddersyede løsninger inden for grafisk design, scenografi og speak. Vi skaber visuelle identiteter, der kommunikerer effektivt og æstetisk gennem branding, logo design og webdesign. Vores scenografiske arbejde tilpasser sig enhver event og teaterproduktion, hvor vi sørger for, at alt fra design til opsætning og lys skaber den rette stemning. Derudover tilbyder vi professionelle speak-tjenester til reklamer, præsentationer og e-learning, med fokus på høj lydkvalitet og den rette tone. Vi arbejder tæt sammen med vores kunder for at levere kreative, funktionelle løsninger, der styrker deres brand og visuelle udtryk.
+        </p>
       </div>
+
       <p className="text-red pb-10 word-spacing-reset text-headers">Nyeste projekter</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-full">

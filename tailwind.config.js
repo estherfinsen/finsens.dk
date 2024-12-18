@@ -7,6 +7,7 @@ module.exports = {
         running: ["15px", "15px"],
         breads: ["25px", "25px"],
         headers: ["65px", "65px"],
+        hjort: ["44px", "44px"],
         footer_head: ["130px", "130px"],
         footer: ["40px", "40px"],
         footer_breads_mobile: ["18px", "18px"],
