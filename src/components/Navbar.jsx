@@ -27,12 +27,12 @@ const Navbar = () => {
     };
   }, [isOpen]);
   return (
-    <nav className="flex items-center gap-9 md:gap-16 lg:gap-32">
+    <nav className="flex items-center gap-8 md:gap-24 lg:gap-32">
       <Link href="/" className="flex items-center">
         <p className={`${work_header.className} uppercase text-nav_mobile md:text-nav_ipad lg:text-nav text-red`}>Finsens</p>
       </Link>
 
-      <div className="flex items-end z-30 scale-x-[1.6] scale-y-[1.6] md:scale-x-[2.9] md:scale-y-[2.9] pt-0.5 lg:scale-x-[4.6] lg:scale-y-[4.6]">
+      <div className="flex items-end z-30 scale-x-[1.3] scale-y-[1.3] md:scale-x-[2.9] md:scale-y-[2.9] pt-0.5 lg:scale-x-[4.6] lg:scale-y-[4.6]">
         <Hamburger toggled={isOpen} toggle={setOpen} color={isOpen ? "#E1F7FF" : "#FF4125"} size={48} />
       </div>
 

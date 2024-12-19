@@ -21,7 +21,7 @@ export default function Page() {
           <div className="relative overflow-hidden w-full mb-8 py-0 bg-red hover:bg-blue hover:text-red hover:duration-500">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
             <div className="relative flex animate-program-1 w-full">
-              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik</p>
+              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik</p>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-red"></div>
           </div>
@@ -31,7 +31,7 @@ export default function Page() {
           <div className="relative overflow-hidden w-full mb-8 py-0 bg-red hover:bg-blue hover:text-red hover:duration-500">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
             <div className="relative flex animate-program-1 w-full">
-              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi</p>
+              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi scenografi</p>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-red"></div>
           </div>
@@ -41,7 +41,7 @@ export default function Page() {
           <div className="relative overflow-hidden w-full mb-20 py-0 bg-red hover:bg-blue hover:text-red hover:duration-500">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
             <div className="relative flex animate-program-1 w-full">
-              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak</p>
+              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak speak</p>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-red"></div>
           </div>

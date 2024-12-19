@@ -15,7 +15,7 @@ module.exports = {
         footer_head_ipad: ["90px", "90px"],
         nav: ["230px", "230px"],
         nav_ipad: ["140px", "140px"],
-        nav_mobile: ["80px", "80px"],
+        nav_mobile: ["65px", "65px"],
       },
 
       keyframes: {
