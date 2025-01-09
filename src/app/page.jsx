@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Work_Sans } from "next/font/google";
-import dataGrafik from "./dataGrafik";
+import dataCases from "./dataCases";
 import dataScenografi from "./dataScenografi";
 import dataSpeak from "./dataSpeak";
 
@@ -17,11 +17,11 @@ export default function Page() {
   return (
     <section className="w-full min-h-screen text-blue uppercase pt-2 text-running relative flex flex-col word-spacing-custom">
       <div>
-        <Link href={"/grafik"}>
+        <Link href={"/cases"}>
           <div className="relative overflow-hidden w-full mb-8 py-0 bg-red hover:bg-blue hover:text-red hover:duration-500">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
             <div className="relative flex animate-program-1 w-full">
-              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik</p>
+              <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases</p>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-red"></div>
           </div>
@@ -59,14 +59,14 @@ export default function Page() {
       <p className="text-red pb-10 word-spacing-reset text-footer md:text-footer lg:text-headers">Nyeste projekter</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-full">
-        <Link href={"/grafik"} className="relative group aspect-square overflow-hidden">
+        <Link href={"/cases"} className="relative group aspect-square overflow-hidden">
           <div className="relative w-full h-full">
-            <Image src={dataGrafik[0]?.images[0].src || "/default-image.jpg"} alt={dataGrafik[0]?.images[0].alt || "Grafik"} layout="fill" objectFit="cover" className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-80" />
+            <Image src={dataCases[0]?.images[0].src || "/default-image.jpg"} alt={dataCases[0]?.images[0].alt || "Cases"} layout="fill" objectFit="cover" className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-80" />
             <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <div className="relative w-full h-full">
                 <div className="flex animate-program-2 w-full h-full items-center justify-center">
                   {Array(10)
-                    .fill("grafik")
+                    .fill("cases")
                     .map((word, i) => (
                       <span key={i} className="text-red uppercase tracking-widest whitespace-nowrap border-y-2 border-red py-2.5 px-4 bg-blue word-spacing-custom">
                         {word}

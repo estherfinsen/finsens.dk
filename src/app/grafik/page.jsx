@@ -1,6 +1,6 @@
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
-import dataGrafik from "../dataGrafik";
+import dataCases from "../dataCases";
 
 const work_header = Work_Sans({
   weight: ["900"],
@@ -9,8 +9,8 @@ const work_header = Work_Sans({
   display: "swap",
 });
 
-export default async function grafik() {
-  const response = await fetch("https://jhgcdsutaztszxtyehtm.supabase.co/rest/v1/grafik", {
+export default async function cases() {
+  const response = await fetch("https://jhgcdsutaztszxtyehtm.supabase.co/rest/v1/cases", {
     method: "GET",
     headers: {
       apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpoZ2Nkc3V0YXp0c3p4dHllaHRtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIwMTg0NTgsImV4cCI6MjA0NzU5NDQ1OH0.VVF1QVqChKO2sUcYjYOuaUFdGCe68Sj3B2ZxG05mQiI",
@@ -26,7 +26,7 @@ export default async function grafik() {
         <div className="absolute top-0 left-0 w-full h-[2px] bg-red"></div>
 
         <div className="relative flex animate-program-2 w-screen">
-          <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik grafik</p>
+          <p className="text-running flex-shrink-0 tracking-widest word-spacing-custom py-3">cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases cases</p>
         </div>
 
         <div className="absolute bottom-0 left-0 w-full h-[2px] bg-red"></div>
@@ -38,9 +38,9 @@ export default async function grafik() {
 
           return (
             <li key={item.id} className={`group flex ${alignClass} flex-col h-[400px] w-full`}>
-              <a href={`/grafik/${item.slug}`} className="block ">
+              <a href={`/cases/${item.slug}`} className="block ">
                 <div className="relative w-[400px] h-[400px] bg-grey overflow-hidden">
-                  <Image src={dataGrafik.find((image) => image.id === item.id && image.images[0].name === "cover")?.images[0].src || "/default-image.jpg"} alt={dataGrafik.find((image) => image.id === item.id && image.images[0].name === "cover")?.images[0].alt || "Default alt text"} fill className="object-cover transition-transform-opacity duration-500 group-hover:opacity-80 group-hover:scale-110" />
+                  <Image src={dataCases.find((image) => image.id === item.id && image.images[0].name === "cover")?.images[0].src || "/default-image.jpg"} alt={dataCases.find((image) => image.id === item.id && image.images[0].name === "cover")?.images[0].alt || "Default alt text"} fill className="object-cover transition-transform-opacity duration-500 group-hover:opacity-80 group-hover:scale-110" />
                 </div>
 
                 <p className="mt-2 text-breads font-bold w-[300px] text-left pl-1">{item.name}</p>
